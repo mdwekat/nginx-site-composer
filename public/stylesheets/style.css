@@ -1,0 +1,8 @@
+[v-cloak] {
+    display: none;
+}
+
+.form {
+    border: 1px solid #ccc;
+    padding: 2em;
+}

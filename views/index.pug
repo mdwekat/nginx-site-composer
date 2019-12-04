@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h4 Create New Site
+    pre=posts
+    div(class='row')
+        div(class='col-6')
+            form(action='/createSite' method='Post' class='form card')
+                if error
+                    p(class='text-danger') #{error}
+                label Domain:
+                input(type='text', name='domain' , placeholder='example.com')
+                label Public Path:
+                input(type='text', name='publicPath' placeholder='/public')
+                hr
+                button(class='btn btn-primary btn-sm', type='submit') Create Site
+
+    div
+        ul
+            li(v-for='site in sites' :key="site.id") {{site.id}} - {{site.domain}}
+

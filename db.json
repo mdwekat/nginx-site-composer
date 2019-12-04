@@ -1,0 +1,19 @@
+{
+  "sites": [
+    {
+      "id": "KPjQNmqWA",
+      "domain": "test.com",
+      "publicPath": "dasdsa",
+      "repo": {
+        "branch": "master",
+        "keyPath": "./keys/KPjQNmqWA.key"
+      }
+    },
+    {
+      "id": "NHn9XK9i-",
+      "domain": "test2.com",
+      "publicPath": "/"
+    }
+  ],
+  "users": []
+}
